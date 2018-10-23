@@ -1,0 +1,8 @@
+<launch>
+    <node name="talker_pub" pkg="myfirstpkg"
+          type="keyboard_pub.py" output="screen" />
+    <node name="djfire" pkg="myfirstpkg"
+          type="djfire_sub.py" output="screen" />
+    <node name="arduino" pkg="rosserial_python"
+          type="serial_node.py" args="/dev/ttyUSB0" output="screen" />     
+</launch>
